@@ -7,27 +7,13 @@ import org.springframework.boot.test.util.TestPropertyValues;
 import org.springframework.cloud.context.refresh.ContextRefresher;
 import org.springframework.core.env.ConfigurableEnvironment;
 
-@SpringBootTest
+@SpringBootTest (classes = ClientApplication.class)
 class ClientApplicationTests {
 
-    @Autowired
-    private ConfigurableEnvironment environment;
-
-    @Autowired
-    private MessageRestController controller;
-
-    @Autowired
-    private ContextRefresher refresher;
 
     @Test
     void contextLoads()  {
-        assertThat(controller.getMessage()).isNotEqualTo("Hello test");
-        TestPropertyValues
-                .of("message:Hello test")
-                .applyTo(environment);
-        assertThat(controller.getMessage()).isNotEqualTo("Hello test");
-        refresher.refresh();
-        assertThat(controller.getMessage()).isEqualTo("Hello test");
+
     }
 
 }
