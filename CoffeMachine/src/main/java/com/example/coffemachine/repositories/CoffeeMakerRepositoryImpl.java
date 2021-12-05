@@ -31,7 +31,6 @@ public class CoffeeMakerRepositoryImpl implements CoffeeMakerRepository {
                 "electric_power_supply, on_repair )VALUES (uuid_generate_v4() ,now(), ? , ? );")) {
             stmt.setBoolean(1, coffeeMakerModel.isElectricPowerSupply());
             stmt.setBoolean(2, coffeeMakerModel.isOnRepair());
-//            stmt.addBatch();
             stmt.executeBatch();
             LOG.info("The activation data was successfully recorded - {}", coffeeMakerModel);
         }
