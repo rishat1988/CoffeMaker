@@ -1,0 +1,29 @@
+2021-12-05 16:27:47.109 [restartedMain] INFO  c.e.c.CoffeMachineApplication - Starting CoffeMachineApplication using Java 11 on Rishat2-PC with PID 9092 (C:\Users\Rishat2\Desktop\CoffeMachine\build\classes\java\main started by Rishat2 in C:\Users\Rishat2\Desktop\CoffeMachine)
+2021-12-05 16:27:47.124 [restartedMain] INFO  c.e.c.CoffeMachineApplication - No active profile set, falling back to default profiles: default
+2021-12-05 16:27:47.155 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-05 16:27:47.155 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-05 16:27:48.060 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-05 16:27:48.076 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-05 16:27:48.076 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-05 16:27:48.076 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-05 16:27:48.123 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-05 16:27:48.123 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 968 ms
+2021-12-05 16:27:48.529 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-05 16:27:48.545 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-05 16:27:48.576 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-05 16:27:48.592 [restartedMain] INFO  c.e.c.CoffeMachineApplication - Started CoffeMachineApplication in 1.883 seconds (JVM running for 2.9)
+2021-12-05 16:27:53.155 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-05 16:27:53.156 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-12-05 16:27:53.157 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-12-05 16:27:57.233 [http-nio-8080-exec-1] INFO  c.e.c.s.CoffeeMakerServiceImpl - Turn on the coffee maker with the following information - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:27:57.253 [http-nio-8080-exec-1] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - After turning on the coffee maker, you need to record the initial data - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:28:00.810 [http-nio-8080-exec-1] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - The activation data was successfully recorded - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:28:00.812 [http-nio-8080-exec-1] INFO  c.e.c.s.CoffeeMakerServiceImpl - the activation data was successfully recorded- CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:29:21.613 [http-nio-8080-exec-5] INFO  c.e.c.s.CoffeeMakerServiceImpl - Turn on the coffee maker with the following information - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:29:21.613 [http-nio-8080-exec-5] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - After turning on the coffee maker, you need to record the initial data - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:29:25.031 [http-nio-8080-exec-5] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - The activation data was successfully recorded - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:29:25.032 [http-nio-8080-exec-5] INFO  c.e.c.s.CoffeeMakerServiceImpl - the activation data was successfully recorded- CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:31:54.937 [http-nio-8080-exec-8] INFO  c.e.c.s.CoffeeMakerServiceImpl - Turn on the coffee maker with the following information - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:31:56.741 [http-nio-8080-exec-8] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - After turning on the coffee maker, you need to record the initial data - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:32:21.066 [http-nio-8080-exec-8] INFO  c.e.c.r.CoffeeMakerRepositoryImpl - The activation data was successfully recorded - CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)
+2021-12-05 16:32:21.072 [http-nio-8080-exec-8] INFO  c.e.c.s.CoffeeMakerServiceImpl - the activation data was successfully recorded- CoffeeMakerModel(coffeeMakerId=null, startTime=null, endTime=null, diffTime=null, electricPowerSupply=true, onRepair=false)

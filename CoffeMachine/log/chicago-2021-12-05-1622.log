@@ -1,0 +1,14 @@
+2021-12-05 16:22:18.643 [restartedMain] INFO  c.e.c.CoffeMachineApplication - Starting CoffeMachineApplication using Java 11 on Rishat2-PC with PID 9696 (C:\Users\Rishat2\Desktop\CoffeMachine\build\classes\java\main started by Rishat2 in C:\Users\Rishat2\Desktop\CoffeMachine)
+2021-12-05 16:22:18.643 [restartedMain] INFO  c.e.c.CoffeMachineApplication - No active profile set, falling back to default profiles: default
+2021-12-05 16:22:18.690 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-05 16:22:18.690 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-05 16:22:19.611 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-12-05 16:22:19.627 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-12-05 16:22:19.627 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-12-05 16:22:19.627 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.55]
+2021-12-05 16:22:19.673 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-12-05 16:22:19.673 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 983 ms
+2021-12-05 16:22:20.095 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-12-05 16:22:20.110 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-12-05 16:22:20.126 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-05 16:22:20.141 [restartedMain] INFO  c.e.c.CoffeMachineApplication - Started CoffeMachineApplication in 1.914 seconds (JVM running for 3.37)
