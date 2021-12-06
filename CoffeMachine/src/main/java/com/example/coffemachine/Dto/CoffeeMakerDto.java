@@ -29,5 +29,7 @@ public class CoffeeMakerDto {
 
     private boolean onRepair;
 
+    float currentLevelOfWater;
 
+    int coffeeNumber;
 }

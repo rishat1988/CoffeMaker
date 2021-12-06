@@ -12,10 +12,10 @@ public interface CoffeeMakerService {
      * Метод включения кофеварки
      *
      * @param coffeeMakerModel - создание включения кофеварки
-//     * @return - {@link CoffeeMakerModel}
      * @throws Exception - выбрасываемое исключение
+     * @return - ид работы кофеварки
      */
-    void addTurnOn(CoffeeMakerModel coffeeMakerModel) throws Exception;
+    UUID addTurnOn(CoffeeMakerModel coffeeMakerModel) throws Exception;
 
     /**
      * Метод изменения (завершения) работы кофеварки после включения

@@ -20,8 +20,8 @@ public class CoffeeMakerController {
     }
 
     @PostMapping("on")
-    public void turnOn(@RequestBody CoffeeMakerDto coffeeMakerDto) throws Exception {
-         coffeeMakerService.addTurnOn(CoffeeMakerModel.fromDto(coffeeMakerDto));
+    public UUID turnOn(@RequestBody CoffeeMakerDto coffeeMakerDto) throws Exception {
+      return   coffeeMakerService.addTurnOn(CoffeeMakerModel.fromDto(coffeeMakerDto));
     }
 
     @PutMapping("off/{coffeeMakerId}")

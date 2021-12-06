@@ -12,10 +12,9 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
 @Accessors(chain = true)
-public class CoffeeMakerModel {
-
+public class CoffeeMakerModel
+{
     private UUID coffeeMakerId;
 
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm'Z'")
@@ -31,12 +30,51 @@ public class CoffeeMakerModel {
 
     private boolean onRepair;
 
-    public static CoffeeMakerModel fromDto(CoffeeMakerDto coffeeMakerDto) {
+    private float currentLevelOfWater;
+
+    private CoffeeType coffeeType;
+
+    public enum CoffeeType
+    {
+        ESPRESSO(1), CAPPUCCINO(2), LATTE(3), UNDEFINED(0);
+
+        private final int number;
+
+        CoffeeType(int number)
+        {
+            this.number = number;
+        }
+
+        public static CoffeeType fromInt(int number)
+        {
+            switch (number)
+            {
+                case 1:
+                    return ESPRESSO;
+                case 2:
+                    return CAPPUCCINO;
+                case 3:
+                    return LATTE;
+                default:
+                    return UNDEFINED;
+            }
+        }
+
+        public int toInt()
+        {
+            return number;
+        }
+    }
+
+    public static CoffeeMakerModel fromDto(CoffeeMakerDto coffeeMakerDto)
+    {
         var coffeeMakerModel = new CoffeeMakerModel()
-                .setCoffeeMakerId(coffeeMakerDto.getCoffeeMakerId())
+                .setCoffeeMakerId(UUID.randomUUID())
                 .setStartTime(coffeeMakerDto.getStartTime())
                 .setElectricPowerSupply(coffeeMakerDto.isElectricPowerSupply())
-                .setOnRepair(coffeeMakerDto.isOnRepair());
+                .setOnRepair(coffeeMakerDto.isOnRepair())
+                .setCurrentLevelOfWater(coffeeMakerDto.getCurrentLevelOfWater())
+                .setCoffeeType(CoffeeType.fromInt(coffeeMakerDto.getCoffeeNumber()));
 
         return coffeeMakerModel;
     }
