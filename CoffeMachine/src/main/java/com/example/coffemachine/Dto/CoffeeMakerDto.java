@@ -1,5 +1,6 @@
 package com.example.coffemachine.Dto;
 
+import com.example.coffemachine.models.UserModel;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -32,4 +33,6 @@ public class CoffeeMakerDto {
     float currentLevelOfWater;
 
     int coffeeNumber;
+
+    private UUID userId;
 }

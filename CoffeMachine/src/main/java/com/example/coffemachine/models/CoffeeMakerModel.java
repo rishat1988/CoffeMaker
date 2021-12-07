@@ -4,6 +4,7 @@ import com.example.coffemachine.Dto.CoffeeMakerDto;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
 import lombok.experimental.Accessors;
+import org.postgresql.util.*;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -24,7 +25,7 @@ public class CoffeeMakerModel
     private LocalDateTime endTime;
 
     @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm'Z'")
-    private LocalDateTime diffTime;
+    private PGInterval diffTime;
 
     private boolean electricPowerSupply;
 
@@ -33,6 +34,8 @@ public class CoffeeMakerModel
     private float currentLevelOfWater;
 
     private CoffeeType coffeeType;
+
+    private UUID userId;
 
     public enum CoffeeType
     {
@@ -74,7 +77,8 @@ public class CoffeeMakerModel
                 .setElectricPowerSupply(coffeeMakerDto.isElectricPowerSupply())
                 .setOnRepair(coffeeMakerDto.isOnRepair())
                 .setCurrentLevelOfWater(coffeeMakerDto.getCurrentLevelOfWater())
-                .setCoffeeType(CoffeeType.fromInt(coffeeMakerDto.getCoffeeNumber()));
+                .setCoffeeType(CoffeeType.fromInt(coffeeMakerDto.getCoffeeNumber()))
+                .setUserId(coffeeMakerDto.getUserId());
 
         return coffeeMakerModel;
     }

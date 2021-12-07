@@ -4,6 +4,7 @@ import com.example.coffemachine.models.CoffeeMakerModel;
 import org.springframework.stereotype.Service;
 
 import java.sql.Connection;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -40,5 +41,15 @@ public interface CoffeeMakerRepository
      * @throws Exception - выбрасываемое исключение
      */
     public float currentLevelOfCoffee(UUID coffeeMakerId, Connection conn) throws Exception;
+
+    /**
+     * Метод получения всех итераций по работе кофеварки
+     *
+     * @param coffeeMakerId - ИД коферварки
+     * @param conn - подключение к БД
+     * @return - возвращает список всех итераций
+     * @throws Exception - выбрасываемое исключение
+     */
+    List<CoffeeMakerModel> getAllWorksCoffeeMakerByUserId(UUID coffeeMakerId, Connection conn) throws Exception;
 
 }

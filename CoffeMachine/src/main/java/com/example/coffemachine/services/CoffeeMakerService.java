@@ -3,6 +3,8 @@ package com.example.coffemachine.services;
 import com.example.coffemachine.models.CoffeeMakerModel;
 import org.springframework.stereotype.Service;
 
+import java.sql.Connection;
+import java.util.List;
 import java.util.UUID;
 
 @Service
@@ -26,4 +28,14 @@ public interface CoffeeMakerService {
      * @throws Exception - выбрасываемое исключение
      */
     void addTurnOff(CoffeeMakerModel coffeeMakerModel, UUID coffeeMakerId) throws Exception;
+
+    /**
+     * Метод получения всех итераций по работе кофеварки
+     *
+     * @param coffeeMakerId - ИД коферварки
+     * @return - возвращает список всех итераций
+     * @throws Exception - выбрасываемое исключение
+     */
+    List<CoffeeMakerModel> getAllWorksCoffeeMakerByUserId(UUID coffeeMakerId) throws Exception;
+
 }
