@@ -14,7 +14,7 @@ public class PostgreConnector implements DbConnector<Connection>
     @Value("${spring.datasource.url}")
     private String _connStr;
     @Value("${spring.datasource.username}")
-    private String usern;
+    private String username;
     @Value("${spring.datasource.password}")
     private String pass;
 
@@ -24,7 +24,7 @@ public class PostgreConnector implements DbConnector<Connection>
         _ds = new BasicDataSource();
         _ds.setDriverClassName(JDBC_DRIVER);
         _ds.setUrl(_connStr);
-        _ds.setUsername(usern);
+        _ds.setUsername(username);
         _ds.setPassword(pass);
 
     }
