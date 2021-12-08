@@ -2,9 +2,13 @@
 
 После клонирования проекта
 Необходимо настроить окружение в application.properties
+
 spring.datasource.url=
+
 spring.datasource.username=
+
 spring.datasource.password=
+
 server.port=
 
 БД - POstgreSql
